@@ -4,3 +4,8 @@
 # IntelliJ Idea folder
 /.idea/
 api-feiras-livres.iml
+feiras-livres.iml
+mvnw
+mvnw.cmd
+/.mvn/
+/target/

@@ -1,7 +1,9 @@
-# See http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 spring:
-  main.show-banner: false
+  jpa:
+    hibernate:
+      ddl-auto: update
   datasource:
-    url: jdbc:mysql://mysql-database:3306/feiras-livres
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/feiras-livres
     username: root
     password: root
