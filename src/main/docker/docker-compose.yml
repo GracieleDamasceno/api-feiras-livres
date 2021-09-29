@@ -1,0 +1,27 @@
+version: "3.7"
+
+services:
+  api-feiras-livres:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - network-feiras-livres
+    depends_on:
+      - mysql-database
+
+  mysql-database:
+    image: mysql:8
+    networks:
+      - network-feiras-livres
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=feiras-livres
+
+networks:
+  network-feiras-livres:
+    driver: bridge

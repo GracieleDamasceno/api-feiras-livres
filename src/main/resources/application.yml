@@ -1,0 +1,7 @@
+# See http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+spring:
+  main.show-banner: false
+  datasource:
+    url: jdbc:mysql://mysql-database:3306/feiras-livres
+    username: root
+    password: root
