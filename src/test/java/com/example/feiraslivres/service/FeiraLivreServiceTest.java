@@ -20,7 +20,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 /*
- * In order to allow simplicity in the POC, we are limiting our test clauses to fulfil a good code coverage threshold.
+ * In order to allow simplicity of the POC, we are limiting our test clauses to fulfil a good code coverage threshold.
  * However, this does not reflect how to correct test all functionalities.
  * For example, here in the service we should test at least the following scenarios (and perform the following improvements):
  *

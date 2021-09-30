@@ -22,7 +22,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /*
- * In order to allow simplicity in the POC, we are limiting our test clauses to fulfil a good code coverage threshold.
+ * In order to allow simplicity of the POC, we are limiting our test clauses to fulfil a good code coverage threshold.
  * However, this does not reflect how to correct test all functionalities.
  * For example, here in the controller we should test at least the following scenarios (and perform the following improvements):
  *
