@@ -12,7 +12,7 @@
 	<artifactId>feiras-livres</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>feiras-livres</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Project to access, read, delete and update list of Brazilian "Feiras Livres" (street markets)</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -40,6 +40,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>2.4.4</version>
 		</dependency>
 	</dependencies>
 

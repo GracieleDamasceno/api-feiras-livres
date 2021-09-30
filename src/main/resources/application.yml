@@ -3,7 +3,6 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/feiras-livres
     username: root
     password: root
