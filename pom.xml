@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>feiras-livres</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>app</artifactId>
+	<version>0.1</version>
 	<name>feiras-livres</name>
 	<description>Project to access, read, delete and update list of Brazilian "Feiras Livres" (street markets)</description>
 	<properties>

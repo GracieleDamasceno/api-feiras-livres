@@ -2,14 +2,17 @@ version: "3.7"
 
 services:
   api-feiras-livres:
+    image: 'app-0.1.jar'
     container_name: api-feiras-livres
     build:
-      context: ../
-      dockerfile: ../../Dockerfile
+      context: ./
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
     networks:
       - network-feiras-livres
+    volumes:
+      - /usr/src/app
     depends_on:
       - mysql
 
