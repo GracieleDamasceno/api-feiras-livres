@@ -2,22 +2,25 @@ version: "3.7"
 
 services:
   api-feiras-livres:
+    container_name: api-feiras-livres
     build:
-      context: ./
+      context: ../
       dockerfile: ../../Dockerfile
     ports:
       - "8080:8080"
     networks:
       - network-feiras-livres
     depends_on:
-      - mysql-database
+      - mysql
 
-  mysql-database:
+  mysql:
+    container_name: mysql
     image: mysql:8
     networks:
       - network-feiras-livres
     ports:
       - 3306:3306
+    command: ['--secure-file-priv=/var/lib/']
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=feiras-livres

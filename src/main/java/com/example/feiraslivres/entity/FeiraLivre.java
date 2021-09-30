@@ -1,5 +1,7 @@
 package com.example.feiraslivres.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,6 +13,7 @@ import javax.persistence.Id;
 @Entity
 @Getter
 @Setter
+@Builder
 public class FeiraLivre {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -20,14 +23,18 @@ public class FeiraLivre {
 
     private String latitude;
 
+    @JsonProperty(value = "setor_censitario")
     private String setorCensitario;
 
+    @JsonProperty(value = "area_ponderacao")
     private String areaPonderacao;
 
+    @JsonProperty(value = "codigo_distrito")
     private String codigoDistrito;
 
     private String distrito;
 
+    @JsonProperty(value = "codigo_subprefeitura")
     private String codigoSubprefeitura;
 
     private String subprefeitura;
@@ -36,6 +43,7 @@ public class FeiraLivre {
 
     private String regiao8;
 
+    @JsonProperty(value = "nome_feira")
     private String nomeFeira;
 
     private String registro;
